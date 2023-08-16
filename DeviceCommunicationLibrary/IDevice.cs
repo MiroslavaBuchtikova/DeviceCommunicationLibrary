@@ -1,6 +1,7 @@
-namespace DeviceCommunicationLibrary;
-
-public class IDevice
+namespace DeviceCommunicationLibrary
 {
-    
+    public interface IDevice
+    {
+        string DeviceId { get; }
+    }
 }

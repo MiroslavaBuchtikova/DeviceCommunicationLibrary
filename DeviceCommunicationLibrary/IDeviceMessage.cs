@@ -1,13 +1,11 @@
-﻿namespace DeviceCommunicationLibrary;
+﻿using System;
 
-public interface IDeviceMessage<TDevice, TPayload> where TDevice : IDevice
+namespace DeviceCommunicationLibrary
 {
-    TDevice Device { get; }
-    DateTime Timestamp { get; }
-    TPayload Payload { get; }
-}
-
-public interface IDevice
-{
-    string DeviceId { get; }
+    public interface IDeviceMessage<TDevice, TPayload> where TDevice : IDevice
+    {
+        TDevice Device { get; }
+        DateTime Timestamp { get; }
+        TPayload Payload { get; }
+    }
 }
