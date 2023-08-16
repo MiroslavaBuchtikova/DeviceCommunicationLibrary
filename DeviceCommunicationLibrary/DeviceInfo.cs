@@ -1,6 +1,6 @@
 namespace DeviceCommunicationLibrary
 {
-    public interface IDevice
+    public class DeviceInfo : IDevice
     {
         public string DeviceId { get; set; }
         public string Location { get; set; }
